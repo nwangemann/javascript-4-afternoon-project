@@ -164,7 +164,7 @@ class Machine {
     // console.log(this.needs_reboot)
   }
   reboot(){
-    return function(){
+    return () => {
       this.needs_reboot = false
       this.wear_and_tear_count -= 10
       console.log(this.needs_reboot)
